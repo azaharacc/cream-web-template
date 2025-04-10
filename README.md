@@ -13,6 +13,7 @@ The template has been used to showcase the light collection of the architecture 
     JSON – Used for managing multiple languages.
 
 ## 💻 Demo
+https://azaharacc.github.io/cream-web-template/
 
 ![Alt text](cream-lights.jpg)
 
