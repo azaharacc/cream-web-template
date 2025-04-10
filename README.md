@@ -1,8 +1,8 @@
 #  CREAM Web Template
 
-This repository contains the source code for a responsive and interactive website template. It features a clean interface with customizable HTML, CSS, and JavaScript components. It includes multiple languages using JSON files and JavaScript
+A responsive and interactive website template that features a clean interface with customizable HTML, CSS, and JavaScript components. It includes multiple languages using JSON files and JavaScript
 
-The template has been used to showcase the works of the architecture company CREAM (Barcelona)
+The template has been used to showcase the light collection of the architecture company CREAM (Barcelona)
 
 
 ## 🛠️ Technologies Used
