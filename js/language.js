@@ -22,7 +22,7 @@ const loadLanguage = (lang) => {
                 document.getElementById("contact-text").textContent = languageData["contact-text"];
                 document.getElementById("contact-subtitle3").textContent = languageData["contact-subtitle3"];
                 document.getElementById("contact-jobs").textContent = languageData["contact-jobs"];
-                document.getElementById("contact-subtitle4").textContent = languageData["contact-subtitle3"];
+                document.getElementById("contact-subtitle4").textContent = languageData["contact-subtitle4"];
                 document.getElementById("contact-press").textContent = languageData["contact-press"];
                 document.getElementById("contact-end").textContent = languageData["contact-end"];  
             }
