@@ -1,0 +1,46 @@
+    <!-- GALERÍA DE IMAGENES  -->
+    <div class="slider-wrapper">
+      <div class="slider-two-images-container">
+        <div class="slider-two-images">
+          <!-- Slide 1 -->
+          <div class="slide-two-images">
+            <div class="image-container image-large">
+              <img src="../img/slide2_1.jpg" alt="Cream Lights image" onclick="openFullscreen(this)">
+            </div>
+            <div class="image-container image-small">
+              <img src="../img/slide2_2.jpg" alt="Cream Lights image" onclick="openFullscreen(this)">
+            </div>
+          </div>
+          <!-- Slide 2 -->
+          <div class="slide-two-images">
+            <img src="../img/slide2_3.jpg" alt="Cream Lights image" onclick="openFullscreen(this)">
+            <img src="../img/slide2_4.jpg" alt="Cream Lights image" onclick="openFullscreen(this)">
+            <img src="../img/slide2_5.jpg" alt="Cream Lights image" onclick="openFullscreen(this)">
+          </div>
+        </div>
+      </div>
+
+      <div class="caption">
+        <p class="caption-text">Studio Tuli Photography</p>
+      </div>
+
+      <div id="fullscreen-container" class="fullscreen-container">
+        <button class="close-btn" onclick="closeFullscreen()">✕</button>
+        <img id="fullscreen-image" src="" alt="Open fullscreen Cream Lights image">
+      </div>
+      <!-- Botones -->
+      <button class="prev hidden" onclick="moveSlide(-1)">
+        <svg width="50" height="50" viewBox="0 0 24 24" fill="none" stroke="white" stroke-width="2"
+          stroke-linecap="round" stroke-linejoin="round">
+          <polyline points="15 18 9 12 15 6"></polyline>
+        </svg>
+      </button>
+      <button class="next" onclick="moveSlide(1)">
+        <svg width="50" height="50" viewBox="0 0 24 24" fill="none" stroke="white" stroke-width="2"
+          stroke-linecap="round" stroke-linejoin="round">
+          <polyline points="9 18 15 12 9 6"></polyline>
+        </svg>
+      </button>
+      
+    </div>
+

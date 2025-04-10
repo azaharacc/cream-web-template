@@ -1,0 +1,52 @@
+<header>
+<div class="header-wrapper">
+    <div class="logo">
+      <a href="index.html">
+      <img src="img/icons/CREAM.svg" alt="Logo">
+      </a>
+    </div>
+
+    <!-- Ubicación del estudio -->
+    <div class="studio-location">
+      <img src="img/icons/pin2.png" alt="Location" class="pin-icon">
+      <p><a href="https://maps.app.goo.gl/Wgg1jaa7RAPVtiwy9">Cornellà, Barcelona</a></p>
+    </div>
+
+    <!-- Slider -->
+    <div class="slider-container">
+      <div class="slider">
+        <div class="slide">
+          <img class="right" src="img/image1.jpg" alt="Cream Lights image">
+        </div>
+        <div class="slide">
+          <img src="img/image2.jpg" alt="Cream Lights image">
+        </div>
+        <div class="slide">
+          <img class="left" src="img/image3.jpg" alt="Cream Lights image">
+        </div>
+      </div>
+
+      <div class="text-overlay">
+        <p id="text-overlay1">Landscape design, urban design, product design</p>
+        <h1 id="title">CREAM LIGHTS DESIGN COLLECTION</h1>
+      </div>
+
+      <div class="dots-container">
+        <span class="dot" onclick="currentSlide(0)"></span>
+        <span class="dot" onclick="currentSlide(1)"></span>
+        <span class="dot" onclick="currentSlide(2)"></span>
+      </div>
+      <!-- Cambio de idioma -->
+      <div class="language-switcher">
+        <span class="material-icons" onclick="toggleLanguageDropdown()">language</span><!-- Icono de idioma -->
+        <select id="language-toggle" onchange="changeLanguage(this.value)" style="display: none;">
+            <option value="en">English</option>
+            <option value="es">Español</option>
+            <option value="ca">Català</option>
+        </select>
+    </div>
+    
+
+    </div>
+  </div>
+</header>

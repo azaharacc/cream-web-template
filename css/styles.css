@@ -1,0 +1,666 @@
+/* Reset margins and paddings */
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+body,
+html {
+  height: 100%;
+  font-family: "Inter", sans-serif;
+  background-color: #000;
+}
+
+/* General styles */
+h1 {
+  font-size: 64px;
+  margin-bottom: 15px;
+}
+
+h2 {
+  font-size: 20px;
+  margin-bottom: 10px;
+}
+
+p {
+  font-size: clamp(1rem, 1.2vw, 1.2rem);
+  line-height: 1.6;
+  font-family: "Inter", serif;
+  font-weight: 400;
+  margin-bottom: 10px;
+}
+
+a {
+  color: #fff;
+  text-decoration: none;
+}
+
+a:hover {
+  text-decoration: underline;
+}
+
+/* Main container */
+.header-wrapper {
+  position: relative;
+  width: 100%;
+  display: flex;
+  justify-content: space-between;
+}
+
+/* Logo */
+.logo {
+  position: absolute;
+  top: 40px;
+  left: 30px;
+  z-index: 10;
+}
+
+.logo img {
+  width: 100px;
+}
+
+/* Desktop: logo below right */
+.studio-location {
+  position: absolute;
+  bottom: 30px;
+  right: 60px;
+  color: white;
+  font-size: 1rem;
+  display: flex;
+  align-items: center;
+  gap: 5px;
+  z-index: 10;
+  text-decoration: underline;
+}
+
+/* Icon */
+.studio-location .pin-icon {
+  width: 24px;
+  height: auto;
+  margin-bottom: 8px;
+}
+
+.pin-icon {
+  font-variation-settings: 'FILL' 0, 'wght' 400, 'GRAD' 0, 'opsz' 24;
+  font-size: 24px;
+  /* Ajusta el tamaño si es necesario */
+  color: black;
+  /* Color negro */
+  vertical-align: middle;
+  /* Para alinearlo con el texto */
+  margin-right: 5px;
+  /* Espacio entre el icono y el texto */
+}
+
+/* Location */
+.studio-location a {
+  color: white;
+  font-weight: bold;
+}
+
+.studio-location p {
+  font-size: clamp(0.9rem, 1.1vw, 1.2rem);
+}
+
+/* Slider contianer */
+.slider-container {
+  position: relative;
+  max-width: 100vw;
+  max-height: 100vh;
+  overflow: hidden;
+}
+
+/* Slider style */
+.slider {
+  display: flex;
+  height: 100vh;
+  transition: transform 0.5s ease-in-out;
+}
+
+/* Each slide */
+.slide {
+  flex: 0 0 100%;
+  /* Each slide, 100% width*/
+  height: 100vh;
+  /* Images, all the height */
+  position: relative;
+}
+
+/* Images: 100% viewport */
+.slide img {
+  width: 100%;
+  height: 100vh;
+  object-fit: cover;
+}
+
+/* Overlay text */
+.text-overlay {
+  position: absolute;
+  bottom: 40%;
+  margin-left: 8%;
+  margin-right: 8%;
+  color: white;
+  text-shadow: 2px 2px 10px rgba(0, 0, 0, 0.7);
+  font-family: "Inter", serif;
+  width: 70%;
+}
+
+.text-overlay h1 {
+  font-size: 4rem;
+}
+
+.text-overlay p {
+  font-size: 1.2rem;
+  line-height: 1.6;
+  margin-bottom: 10px;
+}
+
+/* Dots slider */
+.dots-container {
+  position: absolute;
+  bottom: 20px;
+  left: 50%;
+  transform: translateX(-50%);
+  z-index: 10;
+}
+
+.dot {
+  height: 10px;
+  width: 10px;
+  margin: 0 10px;
+  background-color: rgba(255, 255, 255, 0.6);
+  border-radius: 50%;
+  display: inline-block;
+  cursor: pointer;
+  transition: background-color 0.3s ease;
+}
+
+.dot:hover {
+  background-color: rgba(255, 255, 255, 0.9);
+}
+
+.dot.active {
+  background-color: white;
+  /* Color para el punto activo */
+}
+
+/* Language switcher */
+.language-switcher {
+  position: absolute;
+  top: 40px;
+  right: 30px;
+  z-index: 10;
+  cursor: pointer;
+  display: inline-block;
+}
+
+.language-switcher .material-icons {
+  font-size: clamp(1.25rem, 2vw, 2rem);
+  color: white;
+}
+
+/* Adjust size of language menu */
+#language-toggle {
+  position: absolute;
+  top: 100%;
+  right: 5px;
+  display: none;
+  width: auto;
+  min-width: 120px;
+  z-index: 10;
+  cursor: pointer;
+  background-color: white;
+  color: black;
+  border: 1px solid #ccc;
+  padding: 8px;
+  font-size: 14px;
+}
+
+
+
+/*Text along columns */
+/* Main container */
+main {
+  margin-left: 10%;
+  margin-right: 10%;
+}
+
+.columns-container {
+  display: flex;
+  flex-wrap: wrap;
+  /* This adjusts columns to smaller screens */
+  margin: 100px 0px;
+  gap: 20px;
+  justify-content: center;
+}
+
+/* Each column styles */
+.column {
+  flex: 1 1 calc(50% - 20px);
+  max-width: 50%;
+  box-sizing: border-box;
+  padding: 0px;
+  text-align: left;
+  color: #fff;
+}
+
+.subtitle,
+#subtitle1 {
+  font-size: clamp(1rem, 1.2vw, 1.2rem);
+  line-height: 1.6;
+  font-family: "Inter", serif;
+  font-weight: bolder;
+  margin-bottom: 10px;
+}
+
+/*Slide 2 Images*/
+/* Main container */
+.slider-wrapper {
+  position: relative;
+}
+
+.slider-two-images-container {
+  width: 100%;
+  overflow: hidden;
+  position: relative;
+  display: flex;
+  box-sizing: border-box;
+}
+
+.slider-two-images {
+  display: flex;
+  transition: transform 0.5s ease-in-out;
+  will-change: transform;
+}
+
+.slide-two-images {
+  flex: 0 0 100%;
+  width: 100%;
+  max-width: 100%;
+  display: flex;
+  justify-content: center;
+  gap: 20px;
+  cursor: pointer;
+}
+
+.slide-two-images img {
+  width: 100%;
+  height: auto;
+  object-fit: cover;
+  min-width: 0;
+  /* This is for Chrome */
+}
+
+.image-small {
+  width: 31%;
+}
+
+.image-large {
+  width: 69%;
+}
+
+/* Buttons outside images */
+button.prev,
+button.next {
+  position: absolute;
+  bottom: 0%;
+  background: transparent;
+  color: white;
+  border: none;
+  padding: 10px;
+  cursor: pointer;
+  font-size: 48px;
+  padding: 0px;
+  z-index: 10;
+}
+
+button.prev {
+  left: -50px;
+}
+
+button.next {
+  right: -50px;
+}
+
+button.prev:hover,
+button.next:hover {
+  opacity: 1;
+}
+
+button.hidden {
+  display: none;
+}
+
+
+/* Caption */
+.caption {
+  position: relative;
+  text-align: left;
+  left: 10px;
+  color: rgba(255, 255, 255, 0.7);
+  width: 100%;
+  margin-top: 10px;
+}
+
+.caption-text {
+  font-size: 0.8rem;
+  font-style: italic;
+  font-weight: 300;
+}
+
+/* Images 2 columns */
+.images-container2 {
+  display: flex;
+  gap: 50px;
+}
+
+.image-left,
+.image-right {
+  width: 100%;
+  /* Asegura que las imágenes llenen su contenedor */
+  overflow: hidden;
+  /* Evita que las imágenes se desborden */
+  cursor: pointer;
+}
+
+.image-left {
+  flex: 1;
+  /* Ocupa 1/3 del espacio */
+}
+
+.image-right {
+  flex: 2;
+  /* Ocupa 2/3 del espacio */
+}
+
+.images-container2 img {
+  width: 100%;
+  /* Las imágenes llenan el contenedor */
+  height: 100%;
+  /* Las imágenes ocupan toda la altura definida */
+  object-fit: cover;
+  /* Ajusta la imagen sin deformarla */
+}
+
+/* Footer */
+.footer {
+  display: flex;
+  justify-content: space-between;
+  padding: 30px 20px;
+  margin-top: 90px;
+  color: white;
+  border-top: 2px solid white;
+  /* Línea blanca en la parte superior */
+}
+
+.footer-left {
+  display: flex;
+  flex-direction: column;
+  /* Hace que los elementos se apilen verticalmente */
+  align-items: flex-start;
+  /* Alinea los elementos a la izquierda */
+}
+
+.social-media {
+  margin-top: 10px;
+  /* Espaciado entre el copyright y los logos */
+  text-align: left;
+  /* Asegura que el texto dentro de logos también se alinee a la izquierda */
+}
+
+.icon {
+  width: 30px;
+  margin-right: 3px;
+}
+
+.footer-right {
+  right: 30px;
+  text-align: right;
+  width: 40%;
+}
+
+.footer-left p,
+.footer-right p {
+  margin: 0;
+}
+
+#copyright {
+  font-size: clamp(0.9rem, 1.1vw, 1.1rem);
+  margin-right: 10px;
+  text-align: left;
+  font-family: "Space Grotesk", sans-serif;
+  font-weight: 300;
+  font-style: italic;
+}
+
+/* Pop up */
+.popup {
+  display: none;
+  position: fixed;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  background-color: rgba(0, 0, 0, 0.5);
+  z-index: 999;
+}
+
+.popup-content {
+  background-color: rgba(0, 0, 0, 0.8);
+  /* Fondo oscuro semi-transparente */
+  padding: 10%;
+  width: 100%;
+  height: 100%;
+  border-radius: 10px;
+  color: white;
+  margin-bottom: 200px;
+  overflow: scroll;
+  font-family: "Space Grotesk", sans-serif;
+}
+
+address p {
+  font-style: normal;
+  margin-bottom: 5px;
+}
+
+/* Close button  */
+.close-btn {
+  color: #aaa;
+  font-size: 28px;
+  font-weight: bold;
+  position: absolute;
+  top: 10px;
+  right: 20px;
+  cursor: pointer;
+}
+
+.close-btn:hover,
+.close-btn:focus {
+  color: black;
+  text-decoration: none;
+  cursor: pointer;
+}
+
+#contact-btn {
+  cursor: pointer;
+  font-weight: bold;
+  color: #fff;
+  font-family: "Space Grotesk", sans-serif;
+}
+
+#contact-btn:hover {
+  text-decoration: underline;
+}
+
+.contact-where {
+  display: flex;
+  align-items: center;
+  gap: 8px;
+}
+
+.contact-where img {
+  width: 24px;
+  height: auto;
+  margin-bottom: 18px;
+}
+
+/* Fullscreen images */
+.fullscreen-container {
+  position: fixed;
+  top: 0;
+  left: 0;
+  width: 100vw;
+  height: 100vh;
+  background: rgba(0, 0, 0, 0.9);
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  z-index: 1000;
+  opacity: 0;
+  visibility: hidden;
+  transition: opacity 0.3s ease, visibility 0.3s ease;
+}
+
+.fullscreen-container.active {
+  opacity: 1;
+  visibility: visible;
+}
+
+.fullscreen-container img {
+  max-width: 90%;
+  max-height: 90%;
+  object-fit: contain;
+}
+
+.close-btn {
+  position: absolute;
+  top: 20px;
+  right: 20px;
+  background: none;
+  border: none;
+  font-size: 32px;
+  color: white;
+  cursor: pointer;
+  transition: opacity 0.3s ease;
+}
+
+.close-btn:hover {
+  opacity: 0.7;
+}
+
+/* Responsive */
+@media (max-width: 768px) {
+  .slide-two-images {
+    gap: 8px;
+  }
+
+  .images-container2 {
+    gap: 10px;
+  }
+
+  .right {
+    object-position: 75%;
+  }
+
+  .left {
+    object-position: 30%;
+  }
+
+  main {
+    margin-left: 3%;
+    margin-right: 3%;
+  }
+
+  .columns-container {
+    margin: 60px 0px;
+  }
+
+  .header-wrapper {
+    position: relative;
+    width: 100%;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+  }
+
+  .logo {
+    position: absolute;
+    z-index: 10;
+  }
+
+  .studio-location {
+    position: absolute;
+    top: 40px;
+    bottom: auto;
+    right: 30px;
+    font-size: 0.9rem;
+    display: flex;
+    align-items: center;
+    gap: 5px;
+    z-index: 20;
+  }
+
+  .language-switcher {
+    top: 80px;
+    right: 30px;
+  }
+
+  .pin-icon {
+    width: 16px;
+    height: 16px;
+  }
+
+  .text-overlay {
+    bottom: 38%;
+    font-size: 1.5rem;
+  }
+
+  .text-overlay h1 {
+    font-size: 2.5rem;
+  }
+
+  .dots-container {
+    bottom: 15px;
+  }
+
+  .column {
+    max-width: 100%;
+    flex: 1 1 100%;
+  }
+
+  .slider-two-images-container {
+    width: 100%;
+  }
+
+  .slide-group {
+    flex-direction: column;
+    /* Images one below the other */
+    gap: 10px;
+  }
+
+  .image-container img {
+    width: 100%;
+    height: auto;
+  }
+
+  button.prev {
+    left: -5px;
+  }
+
+  button.next {
+    right: -5px;
+  }
+
+  .popup-content {
+    padding: 24% 7%;
+  }
+
+  #contact-us {
+    font-size: 3em;
+  }
+
+  .footer-left {
+    width: 60%;
+  }
+}

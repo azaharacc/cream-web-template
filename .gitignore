@@ -1,0 +1,14 @@
+# Ignorar archivos innecesarios
+
+# Archivos del sistema
+.DS_Store
+Thumbs.db
+
+# Archivos de entorno y configuración
+.env
+*.log
+
+# Archivos temporales
+*.tmp
+*.swp
+*.bak
